@@ -1,0 +1,134 @@
+body{
+    margin: 0 auto;
+}
+
+/*Nav-bar styles*/
+header{
+    background-color: rgb(137, 20, 20);
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+/*Nav-bar links*/
+header a{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+/*content after nav-bar*/
+main{
+    background-color: brown;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reg{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    text-align: center;
+    color: hsl(0, 0%, 90%);
+    width: 400px;
+    font-size: 20px;
+    border: 1px solid hsl(0, 0%, 92%);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    
+}
+
+form h1{
+    font-size: 35px;
+    margin-top: -10px;
+}
+
+.input{
+    background: none;
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 90%);
+}
+
+/*display of the input field*/
+.new{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-bottom: 20px;
+}
+
+/*input field placeholder*/
+.input::placeholder{
+    color: hsl(0, 0%, 90%);
+    font-size: 15px;
+}
+
+/*when input is selcted*/
+input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+/*button styles*/
+button{
+    width: 100%;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 1px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding: 15px 0;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+a{
+    color: white;
+}
+
+
+/*responsiveness*/
+@media (max-width: 768px) {
+    
+    .reg{
+        padding: 20px;
+        text-align: center;
+        color: hsl(0, 0%, 90%);
+        width: 300px;
+        font-size: 20px;
+        
+    }
+    
+    form h1{
+        font-size: 25px;
+    }
+    
+    .input{
+        font-size: 15px;
+    }
+    
+    .new{
+        margin-bottom: 20px;
+    }
+    
+
+    
+    button{
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+    a{
+        font-size: 10px;
+    }
+}
